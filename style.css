@@ -1,0 +1,46 @@
+body{
+    background-color: gainsboro;
+}
+.container{
+    width: 100%;
+    margin: 0;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.first_image {
+    position: relative;
+    width: 380px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.jegathees {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:transparent;
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+    width: 380px;
+    height: 0;
+    transition: .8s ease;
+}
+.first_image:hover .jegathees {
+    height: 100%;
+}
+.text {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+p{
+    text-transform: capitalize;
+    font-variant: small-caps;
+    font-size: 24px;
+    font-weight: 900;
+}
